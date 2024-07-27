@@ -1,0 +1,101 @@
+settings:
+  reviewers:
+  - CAMOBAP
+  author:
+  - CAMOBAP
+
+repositories:
+  reeper:
+    remote: ssh://git@github.com/lutaml/reeper
+    branch: master
+    files:
+      .github/workflows/rake.yml: gh-actions/ruby/rake.yml
+      .github/workflows/release.yml: gh-actions/ruby/release.yml
+  lutaml:
+    remote: ssh://git@github.com/lutaml/lutaml
+    branch: main
+    files:
+      .github/workflows/rake.yml: gh-actions/ruby/rake.yml
+      .github/workflows/release.yml: gh-actions/ruby/release.yml
+  ruby-ogdf:
+    remote: ssh://git@github.com/lutaml/ruby-ogdf
+    branch: master
+    files:
+      .github/workflows/rake.yml: gh-actions/ruby/rake.yml
+      .github/workflows/release.yml: gh-actions/ruby/release.yml
+  expression:
+    remote: ssh://git@github.com/lutaml/expression
+    branch: master
+    files:
+      .github/workflows/rake.yml: gh-actions/ruby/rake.yml
+      .github/workflows/release.yml: gh-actions/ruby/release.yml
+  lutaml-uml:
+    remote: ssh://git@github.com/lutaml/lutaml-uml
+    branch: main
+    files:
+      .github/workflows/release.yml: gh-actions/ruby/release.yml
+  lutaml-xmi:
+    remote: ssh://git@github.com/lutaml/lutaml-xmi
+    branch: main
+    files:
+      .github/workflows/release.yml: gh-actions/ruby/release.yml
+  xmi:
+    remote: ssh://git@github.com/lutaml/xmi
+    branch: main
+    files:
+      .github/workflows/rake.yml: gh-actions/ruby/rake.yml
+      .github/workflows/release.yml: gh-actions/ruby/release.yml
+  ogc-gml:
+    remote: ssh://git@github.com/lutaml/ogc-gml
+    branch: main
+    files:
+      .github/workflows/rake.yml: gh-actions/ruby/rake.yml
+      .github/workflows/release.yml: gh-actions/ruby/release.yml
+  lutaml-model:
+    remote: ssh://git@github.com/lutaml/lutaml-model
+    branch: main
+    files:
+      .github/workflows/rake.yml: gh-actions/ruby/rake.yml
+      .github/workflows/release.yml: gh-actions/ruby/release.yml
+  genericode:
+    remote: ssh://git@github.com/lutaml/genericode
+    branch: main
+    files:
+      .github/workflows/rake.yml: gh-actions/ruby/rake.yml
+      .github/workflows/release.yml: gh-actions/ruby/release.yml
+groups:
+  gems:
+  - reeper
+  - lutaml
+  - genericode
+  - lutaml-uml
+  - lutaml-xmi
+  - expression
+  - expressir
+  - xmi
+  - ogc-gml
+  - ruby-ogdf
+  - lutaml-model
+  sites:
+  - lutaml.github.io
+  grammar:
+  - express-grammar
+  - tree-sitter-lutaml
+  infrastructure:
+  - support
+  - oss-guides
+  - reference-code
+  ignore:
+  # gems
+  - expressir
+  # sites
+  - lutaml.github.io
+  # infrastructure
+  - oss-guides
+  - reference-code
+  - expressir-java
+  # grammar
+  - express-grammar
+  - tree-sitter-lutaml
+  # site
+  - lutaml.github.io
