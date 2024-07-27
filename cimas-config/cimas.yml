@@ -1,8 +1,8 @@
 settings:
   reviewers:
-  - CAMOBAP
+    - ronaldtse
   author:
-  - CAMOBAP
+    - CAMOBAP
 
 repositories:
   reeper:
@@ -65,37 +65,37 @@ repositories:
       .github/workflows/release.yml: gh-actions/ruby/release.yml
 groups:
   gems:
-  - reeper
-  - lutaml
-  - genericode
-  - lutaml-uml
-  - lutaml-xmi
-  - expression
-  - expressir
-  - xmi
-  - ogc-gml
-  - ruby-ogdf
-  - lutaml-model
+    - reeper
+    - lutaml
+    - genericode
+    - lutaml-uml
+    - lutaml-xmi
+    - expression
+    - expressir
+    - xmi
+    - ogc-gml
+    - ruby-ogdf
+    - lutaml-model
   sites:
-  - lutaml.github.io
+    - lutaml.github.io
   grammar:
-  - express-grammar
-  - tree-sitter-lutaml
+    - express-grammar
+    - tree-sitter-lutaml
   infrastructure:
-  - support
-  - oss-guides
-  - reference-code
+    - support
+    - oss-guides
+    - reference-code
   ignore:
-  # gems
-  - expressir
-  # sites
-  - lutaml.github.io
-  # infrastructure
-  - oss-guides
-  - reference-code
-  - expressir-java
-  # grammar
-  - express-grammar
-  - tree-sitter-lutaml
-  # site
-  - lutaml.github.io
+    # gems
+    - expressir
+    # sites
+    - lutaml.github.io
+    # infrastructure
+    - oss-guides
+    - reference-code
+    - expressir-java
+    # grammar
+    - express-grammar
+    - tree-sitter-lutaml
+    # site
+    - lutaml.github.io
