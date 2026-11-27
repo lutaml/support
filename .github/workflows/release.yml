@@ -14,6 +14,8 @@ on:
     secrets:
       rubygems-api-key:
         required: true
+      pat_token:
+        required: false
   # The publish leg: when the release PR (head branch release/v*) merges,
   # metanorma/ci tags the merge commit and publishes (metanorma/ci#515).
   # Ordinary PR closes are skipped inside the reusable workflow.
@@ -28,3 +30,4 @@ jobs:
       release_command: ${{ inputs.release_command }}
     secrets:
       rubygems-api-key: ${{ secrets.rubygems-api-key }}
+      pat_token: ${{ secrets.pat_token }}
